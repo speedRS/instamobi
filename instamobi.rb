@@ -98,7 +98,7 @@ puts "Unread Item(s): %d" % [count]
 # It's worth noting that the .save() method is clever enough to append digits to the file name
 # if a file with the current name already exists. The advantage of this, at least from a test
 # perspective, is the files won't be overridden.
-puts "Retrieving all Kindle compilation of all unread items ..."
+puts "Retrieving Kindle compilation of all unread items ..."
 agent.get(agent.page.uri.to_s + '/mobi').save(output_dir)
 puts "Kindle compilation saved to %s" % [output_dir]
 
